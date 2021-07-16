@@ -3,7 +3,6 @@ Use IDS341;
 Go
 
 CREATE TABLE Register (
-	UserID uniqueidentifier PRIMARY KEY,
 	EmployeeSequence int identity (1,1),
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(20) NOT NULL,
@@ -12,6 +11,9 @@ CREATE TABLE Register (
 	Email varchar(320) NOT NULL,
 	UserRole varchar(30) NOT NULL
 )
+drop table Register
+select * from Register
+insert into Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, UserName) values ('Chris', 'Aquino', '00000000000', 'admin', 'christianaquinomoreta2@gmail.com', 'Admin', 'admin')
 
 CREATE TABLE Payroll (
 	ID uniqueidentifier PRIMARY KEY,
