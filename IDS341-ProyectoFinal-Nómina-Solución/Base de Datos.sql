@@ -3,16 +3,15 @@ Use IDS341;
 Go
 
 CREATE  TABLE Register (
-	EmployeeSequence int identity (1,1),
+	EmployeeSequence int identity (1,1) PRIMARY KEY,
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(20) NOT NULL,
 	DNI char(11) NOT NULL,
 	UserPassword varchar(16) NOT NULL,
 	Email varchar(320) NOT NULL,
 	UserRole varchar(30) NOT NULL,
-	UserName varchar(30)
+	UserName varchar(30) NOT NULL
 )
-drop table Register
 select * from Register
 insert into Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, UserName) values ('Chris', 'Aquino', '00000000000', 'admin', 'christianaquinomoreta2@gmail.com', 'Admin', 'admin')
 
@@ -36,12 +35,12 @@ CREATE PROCEDURE spShowPayroll
 AS
 BEGIN
 select DNI, FirstName as 'First name', LastName as 'Last name', Position, PhoneNumber as 'Phone number',Salary, SocialSecurity as 'Social security',Taxes,Payment,Assistance from Payroll
-END
+END;
 
 insert into Payroll (DNI,FirstName,LastName,Position,PhoneNumber,Salary,SocialSecurity,Taxes,Payment,Assistance) values ('12352','Samuel','Charles','Feo','2315258',0.00,2563.2,3.214,1.25,1)
 
 Go
-CREATE PROCEDURE spInsertEmployee
+CREATE PROCEDURE spInsertEmployee -- Alters Payroll Table
 @DNI char(11),
 @FirstName varchar(20),
 @LastName varchar(20),
@@ -51,14 +50,15 @@ CREATE PROCEDURE spInsertEmployee
 @SocialSecurity float,
 @Taxes float,
 @Payment float,
-@Assistance int
+@Assistance int,
+@UserName varchar(30)
 AS
 BEGIN
-INSERT INTO Payroll (DNI, FirstName, LastName, Position, PhoneNumber, Salary, SocialSecurity, Taxes, Payment, Assistance) values (@DNI, @FirstName, @LastName, @Position, @PhoneNumber, @Salary, @SocialSecurity, @Taxes, @Payment, @Assistance);
+INSERT INTO Payroll (DNI, FirstName, LastName, Position, PhoneNumber, Salary, SocialSecurity, Taxes, Payment, Assistance, UserName) values (@DNI, @FirstName, @LastName, @Position, @PhoneNumber, @Salary, @SocialSecurity, @Taxes, @Payment, @Assistance, @UserName);
 END;
 
 Go
-CREATE PROCEDURE spUpdateInfo
+CREATE PROCEDURE spUpdateInfo -- Alters Payroll Table
 @DNI char(11),
 @FirstName varchar(20),
 @LastName varchar(20),
@@ -76,7 +76,7 @@ UPDATE Payroll set DNI = @DNI, FirstName = @FirstName, LastName = @LastName, Pos
 END;
 
 Go
-CREATE PROCEDURE spDeleteEmployee
+CREATE PROCEDURE spDeleteEmployee --Alters Register Table
 @DNI varchar(11)
 AS
 BEGIN
@@ -84,15 +84,14 @@ DELETE FROM Payroll WHERE DNI = @DNI
 END;
 
 Go
-USE IDS341
+--USE IDS341
+--Go
 
-Go
+--ALTER TABLE Register
+--ADD UserName varchar(16) NOT NULL;
+--go
 
-ALTER TABLE Register
-ADD UserName varchar(16) NOT NULL;
-go
-
-CREATE PROCEDURE spCreateUser
+CREATE PROCEDURE spCreateUser -- Alters Register Table
 @FirstName varchar(20),
 @LastName varchar(20),
 @DNI char(11),
@@ -107,11 +106,9 @@ END;
 
 
 Go
-CREATE PROCEDURE spDeleteUser
+CREATE PROCEDURE spDeleteUser -- Alters Register Table
 @UserName varchar(16)
 AS
 BEGIN
 DELETE FROM Register WHERE UserName = @UserName
 END;
-
-PRINT "PRUEBA";
