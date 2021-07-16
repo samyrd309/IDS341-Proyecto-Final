@@ -1,0 +1,31 @@
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.exe.config
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.exe
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.pdb
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Negocio.dll
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Datos.dll
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Negocio.pdb
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Datos.pdb
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.AssemblyReference.cache
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.Login.resources
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.Properties.Resources.resources
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.GenerateResource.cache
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.CoreCompileInputs.cache
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.CopyComplete
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.exe
+C:\Users\Christian Aquino\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.pdb
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.AssemblyReference.cache
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.CRUD.resources
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.Login.resources
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.Properties.Resources.resources
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.GenerateResource.cache
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.CoreCompileInputs.cache
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.exe
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.pdb
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.exe.config
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.exe
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Presentación.pdb
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Negocio.dll
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Datos.dll
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Negocio.pdb
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\bin\Debug\Capa_Datos.pdb
+C:\Users\Samuel\Source\Repos\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Presentación\obj\Debug\Capa_Presentación.csproj.CopyComplete
