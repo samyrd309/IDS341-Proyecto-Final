@@ -13,7 +13,7 @@ namespace Capa_Datos
 
         public ConnectionToSql()
         {
-            connectionString = "Server=DESKTOP-1ETHNQD;DataBase= IDS341; integrated security= true";
+            connectionString = "Server=local;DataBase= IDS341; integrated security= true";
         }
         protected SqlConnection GetConnection()
         {
