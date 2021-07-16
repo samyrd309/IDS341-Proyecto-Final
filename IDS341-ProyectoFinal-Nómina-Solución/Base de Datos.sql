@@ -2,14 +2,15 @@
 Use IDS341;
 Go
 
-CREATE TABLE Register (
+CREATE  TABLE Register (
 	EmployeeSequence int identity (1,1),
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(20) NOT NULL,
 	DNI char(11) NOT NULL,
 	UserPassword varchar(16) NOT NULL,
 	Email varchar(320) NOT NULL,
-	UserRole varchar(30) NOT NULL
+	UserRole varchar(30) NOT NULL,
+	UserName varchar(30)
 )
 drop table Register
 select * from Register
@@ -18,7 +19,7 @@ insert into Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, U
 CREATE TABLE Payroll (
 	ID uniqueidentifier PRIMARY KEY,
 	EmployeeSequence int identity (1,1),
-	DNI char(11) NOT NULL,
+	DNI varchar(11) NOT NULL,
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(20) NOT NULL,
 	Position varchar(30) NOT NULL,
@@ -29,6 +30,15 @@ CREATE TABLE Payroll (
 	Payment float NOT NULL,
 	Assistance int
 )
+
+Go
+CREATE PROCEDURE spShowPayroll
+AS
+BEGIN
+select DNI, FirstName as 'First name', LastName as 'Last name', Position, PhoneNumber as 'Phone number',Salary, SocialSecurity as 'Social security',Taxes,Payment,Assistance from Payroll
+END
+
+insert into Payroll (DNI,FirstName,LastName,Position,PhoneNumber,Salary,SocialSecurity,Taxes,Payment,Assistance) values ('12352','Samuel','Charles','Feo','2315258',0.00,2563.2,3.214,1.25,1)
 
 Go
 CREATE PROCEDURE spInsertEmployee
@@ -67,7 +77,7 @@ END;
 
 Go
 CREATE PROCEDURE spDeleteEmployee
-@DNI char(11)
+@DNI varchar(11)
 AS
 BEGIN
 DELETE FROM Payroll WHERE DNI = @DNI

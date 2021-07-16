@@ -39,9 +39,14 @@ namespace Capa_Presentación
                     if (validLogin == true)
                     {
                         msgError("Exito");
+
                         //Mostrar el formulario principal
                         //y olcutar el formulario de Login
-                        
+
+                        CRUD crud = new CRUD();
+                        crud.Show();
+                        this.Hide();
+
                         //FormPrincipal mainMenu = new FormPrincipal();
                         //mainMenu.Show();
                         //mainMenu.FormClosed += Logout;

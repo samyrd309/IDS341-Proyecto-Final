@@ -11,7 +11,7 @@ namespace Capa_Datos
 {
     public class CD_Datos
     {
-        private CD_Conexion connection = new CD_Conexion();
+        private ConnectionToSql connection = new ConnectionToSql();
 
         SqlDataReader read;
         DataTable table = new DataTable();
