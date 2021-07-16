@@ -94,3 +94,5 @@ AS
 BEGIN
 DELETE FROM Register WHERE UserName = @UserName
 END;
+
+PRINT "PRUEBA";
