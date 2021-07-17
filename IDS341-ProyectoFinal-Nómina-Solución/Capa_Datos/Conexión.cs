@@ -14,14 +14,14 @@ namespace Capa_Datos
 
         public ConnectionToSql()
         {
-            connectionString = "Server= .;DataBase= IDS341; integrated security= true";
+            connectionString = "Server= WINDOWS-OHFND69\\VGONZALEZ; DataBase= IDS341; integrated security= true";
         }
         protected SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
         }
 
-        private SqlConnection Conexion = new SqlConnection("Server = .;DataBase = IDS341; Integrated Security = true");
+        private SqlConnection Conexion = new SqlConnection("Server = WINDOWS-OHFND69\\VGONZALEZ ;DataBase = IDS341; Integrated Security = true");
         //Función Abrir String de Conexión
         public SqlConnection OpenConnection()
         {

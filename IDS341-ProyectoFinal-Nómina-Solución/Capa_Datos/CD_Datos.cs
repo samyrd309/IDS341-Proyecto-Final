@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Capa_Datos
 {
     public class CD_Datos
@@ -79,16 +78,17 @@ namespace Capa_Datos
             command.CommandText = "spDeleteEmployee";
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@DNI", DNI);
+
             command.ExecuteNonQuery();
             command.Parameters.Clear();
             connection.CloseConnection();
         }
 
         //Funcion para validar existencia de datos
-        public bool ExisteRegistro(string id, string query)
+        public bool ExisteRegistro(string DNI, string query)
         {
             SqlCommand cmd = new SqlCommand(query, connection.OpenConnection());
-            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@DNI", DNI);
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             if (count == 0)

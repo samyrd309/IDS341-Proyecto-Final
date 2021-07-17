@@ -22,3 +22,9 @@ C:\Users\Deivy\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal
 C:\Users\Deivy\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
 C:\Users\Deivy\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\Deivy\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Leslie\Source\Repos\samyrd309\IDS341-Proyecto-Final\IDS341-ProyectoFinal-Nómina-Solución\Capa_Datos\obj\Debug\Capa_Datos.pdb
