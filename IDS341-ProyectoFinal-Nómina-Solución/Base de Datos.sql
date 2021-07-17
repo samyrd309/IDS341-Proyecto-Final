@@ -16,7 +16,6 @@ select * from Register
 insert into Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, UserName) values ('Chris', 'Aquino', '00000000000', 'admin', 'christianaquinomoreta2@gmail.com', 'Admin', 'admin')
 
 CREATE TABLE Payroll (
-	ID uniqueidentifier PRIMARY KEY,
 	EmployeeSequence int identity (1,1),
 	DNI varchar(11) NOT NULL,
 	FirstName varchar(20) NOT NULL,
@@ -27,7 +26,7 @@ CREATE TABLE Payroll (
 	SocialSecurity float NOT NULL,
 	Taxes float NOT NULL,
 	Payment float NOT NULL,
-	Assistance int
+	Assistance int NOT NULL,
 )
 
 Go
@@ -54,7 +53,7 @@ CREATE PROCEDURE spInsertEmployee -- Alters Payroll Table
 @UserName varchar(30)
 AS
 BEGIN
-INSERT INTO Payroll (DNI, FirstName, LastName, Position, PhoneNumber, Salary, SocialSecurity, Taxes, Payment, Assistance, UserName) values (@DNI, @FirstName, @LastName, @Position, @PhoneNumber, @Salary, @SocialSecurity, @Taxes, @Payment, @Assistance, @UserName);
+INSERT INTO Payroll (DNI, FirstName, LastName, Position, PhoneNumber, Salary, SocialSecurity, Taxes, Payment, Assistance) values (@DNI, @FirstName, @LastName, @Position, @PhoneNumber, @Salary, @SocialSecurity, @Taxes, @Payment, @Assistance);
 END;
 
 Go
@@ -84,12 +83,6 @@ DELETE FROM Payroll WHERE DNI = @DNI
 END;
 
 Go
---USE IDS341
---Go
-
---ALTER TABLE Register
---ADD UserName varchar(16) NOT NULL;
---go
 
 CREATE PROCEDURE spCreateUser -- Alters Register Table
 @FirstName varchar(20),
