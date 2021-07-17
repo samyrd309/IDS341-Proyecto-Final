@@ -49,8 +49,7 @@ CREATE PROCEDURE spInsertEmployee -- Alters Payroll Table
 @SocialSecurity float,
 @Taxes float,
 @Payment float,
-@Assistance int,
-@UserName varchar(30)
+@Assistance int
 AS
 BEGIN
 INSERT INTO Payroll (DNI, FirstName, LastName, Position, PhoneNumber, Salary, SocialSecurity, Taxes, Payment, Assistance) values (@DNI, @FirstName, @LastName, @Position, @PhoneNumber, @Salary, @SocialSecurity, @Taxes, @Payment, @Assistance);
@@ -67,11 +66,10 @@ CREATE PROCEDURE spUpdateInfo -- Alters Payroll Table
 @SocialSecurity float,
 @Taxes float,
 @Payment float,
-@Assistance int,
-@EmployeeSequence int
+@Assistance int
 AS
 BEGIN
-UPDATE Payroll set DNI = @DNI, FirstName = @FirstName, LastName = @LastName, Position = @Position, PhoneNumber = @PhoneNumber, Salary = @Salary, SocialSecurity = @SocialSecurity, Taxes = @Taxes, Payment = @Payment, Assistance = @Assistance WHERE EmployeeSequence = @EmployeeSequence
+UPDATE Payroll set FirstName = @FirstName, LastName = @LastName, Position = @Position, PhoneNumber = @PhoneNumber, Salary = @Salary, SocialSecurity = @SocialSecurity, Taxes = @Taxes, Payment = @Payment, Assistance = @Assistance WHERE DNI = @DNI
 END;
 
 Go

@@ -36,7 +36,7 @@ namespace Capa_Presentación
             this.txtPosition = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtSalary = new System.Windows.Forms.TextBox();
-            this.txtPayment = new System.Windows.Forms.TextBox();
+            this.txtAssistance = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblDNI = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace Capa_Presentación
             // 
             this.dgvPayroll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPayroll.Location = new System.Drawing.Point(0, 353);
-            this.dgvPayroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPayroll.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPayroll.Name = "dgvPayroll";
             this.dgvPayroll.RowHeadersWidth = 51;
             this.dgvPayroll.Size = new System.Drawing.Size(1355, 393);
@@ -63,7 +63,7 @@ namespace Capa_Presentación
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(16, 69);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(509, 22);
             this.txtFirstName.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace Capa_Presentación
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(769, 69);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(584, 22);
             this.txtLastName.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace Capa_Presentación
             // txtDNI
             // 
             this.txtDNI.Location = new System.Drawing.Point(16, 127);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(4);
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(509, 22);
             this.txtDNI.TabIndex = 3;
@@ -87,7 +87,7 @@ namespace Capa_Presentación
             // txtPosition
             // 
             this.txtPosition.Location = new System.Drawing.Point(16, 192);
-            this.txtPosition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(4);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(509, 22);
             this.txtPosition.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace Capa_Presentación
             // txtPhoneNumber
             // 
             this.txtPhoneNumber.Location = new System.Drawing.Point(16, 252);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(509, 22);
             this.txtPhoneNumber.TabIndex = 5;
@@ -103,18 +103,18 @@ namespace Capa_Presentación
             // txtSalary
             // 
             this.txtSalary.Location = new System.Drawing.Point(769, 192);
-            this.txtSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(584, 22);
             this.txtSalary.TabIndex = 6;
             // 
-            // txtPayment
+            // txtAssistance
             // 
-            this.txtPayment.Location = new System.Drawing.Point(769, 127);
-            this.txtPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtPayment.Name = "txtPayment";
-            this.txtPayment.Size = new System.Drawing.Size(584, 22);
-            this.txtPayment.TabIndex = 9;
+            this.txtAssistance.Location = new System.Drawing.Point(769, 127);
+            this.txtAssistance.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAssistance.Name = "txtAssistance";
+            this.txtAssistance.Size = new System.Drawing.Size(584, 22);
+            this.txtAssistance.TabIndex = 9;
             // 
             // lblFirstName
             // 
@@ -189,27 +189,29 @@ namespace Capa_Presentación
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(1039, 304);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 18;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
             this.btnEdit.Location = new System.Drawing.Point(1147, 304);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 19;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(1255, 304);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 20;
@@ -232,7 +234,7 @@ namespace Capa_Presentación
             this.Controls.Add(this.lblDNI);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.txtPayment);
+            this.Controls.Add(this.txtAssistance);
             this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtPosition);
@@ -240,7 +242,7 @@ namespace Capa_Presentación
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.dgvPayroll);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CRUD";
             this.Text = "CRUD";
             this.Load += new System.EventHandler(this.CRUD_Load);
@@ -259,7 +261,7 @@ namespace Capa_Presentación
         private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtSalary;
-        private System.Windows.Forms.TextBox txtPayment;
+        private System.Windows.Forms.TextBox txtAssistance;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblDNI;

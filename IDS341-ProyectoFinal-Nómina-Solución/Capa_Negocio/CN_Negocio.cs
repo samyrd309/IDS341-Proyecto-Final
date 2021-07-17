@@ -14,7 +14,6 @@ namespace Capa_Negocio
         private CD_Datos objectCD = new CD_Datos();
 
         //Show Payroll Method
-
         public DataTable ShowPayroll()
         {
             DataTable table = new DataTable();
@@ -22,11 +21,28 @@ namespace Capa_Negocio
             return table;
         }
 
-        //Delete Payroll Method
+        // Insert payroll method        
+        public void Insert(string DNI, string FirstName, string LastName, string Position, string PhoneNumber, string Salary, string SocialSecurity, string Taxes, string Payment, string Assistance)
+        {
+            objectCD.Insert(DNI, FirstName, LastName, Position, PhoneNumber, Convert.ToDouble(Salary), Convert.ToDouble(SocialSecurity), Convert.ToDouble(Taxes), Convert.ToDouble(Payment), Convert.ToInt32(Assistance));
+        }
 
+        // Edit payroll method        
+        public void Edit(string DNI, string FirstName, string LastName, string Position, string PhoneNumber, string Salary, string SocialSecurity, string Taxes, string Payment, string Assistance)
+        {
+            objectCD.Edit(DNI, FirstName, LastName, Position, PhoneNumber, Convert.ToDouble(Salary), Convert.ToDouble(SocialSecurity), Convert.ToDouble(Taxes), Convert.ToDouble(Payment), Convert.ToInt32(Assistance));
+        }
+
+        //Delete Payroll Method
         public void DeletePayroll(string DNI)
         {
             objectCD.Delete(DNI);
+        }
+
+        // Función para encontrar registros iguales
+        public bool ExisteRegistro(string id, string query)
+        {
+            return objectCD.ExisteRegistro(id, query);
         }
     }
 }
