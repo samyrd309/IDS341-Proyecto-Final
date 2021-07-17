@@ -30,7 +30,7 @@ namespace Capa_Presentación
 					}
 					else
 					{
-						msgError("Wrong username or password.\nPlease, try again!");
+						msgError("Wrong username or password. \n Please, try again!");
 						txtPass.Clear();
 						txtUser.Focus();
 					}
