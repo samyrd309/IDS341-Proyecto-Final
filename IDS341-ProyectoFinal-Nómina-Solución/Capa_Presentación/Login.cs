@@ -21,8 +21,6 @@ namespace Capa_Presentación
 					var validLogin = user.LoginUser(txtUser.Text, txtPass.Text);
 					if (validLogin == true)
 					{
-						msgError("Exito");
-
 						//Mostrar el formulario principal y olcutar el formulario de Login
 						CRUD crud = new CRUD();
 						crud.Show();
@@ -46,14 +44,5 @@ namespace Capa_Presentación
 			lblErrorMessage.Text = "     " + msg;
 			lblErrorMessage.Visible = true;
 		}
-
-		private void Logout(object sender, FormClosedEventArgs e)
-		{
-			txtUser.Clear();
-			txtPass.Clear();
-			lblErrorMessage.Visible = false;
-			this.Show();
-			txtUser.Focus();
-		}
-	}
+    }
 }

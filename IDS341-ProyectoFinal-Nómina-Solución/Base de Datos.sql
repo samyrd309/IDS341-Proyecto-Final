@@ -1,7 +1,7 @@
 ﻿create database IDS341
 Use IDS341;
 Go
-
+--Register table, to access the program. 
 CREATE  TABLE Register (
 	EmployeeSequence int identity (1,1) PRIMARY KEY,
 	FirstName varchar(20) NOT NULL,
@@ -12,9 +12,7 @@ CREATE  TABLE Register (
 	UserRole varchar(30) NOT NULL,
 	UserName varchar(30) NOT NULL
 )
-select * from Register
-insert into Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, UserName) values ('Chris', 'Aquino', '00000000000', 'admin', 'christianaquinomoreta2@gmail.com', 'Admin', 'admin')
-
+--Payroll table. 
 CREATE TABLE Payroll (
 	EmployeeSequence int identity (1,1),
 	DNI varchar(11) NOT NULL,
@@ -36,7 +34,6 @@ BEGIN
 select DNI, FirstName as 'First name', LastName as 'Last name', Position, PhoneNumber as 'Phone number',Salary, SocialSecurity as 'Social security',Taxes,Payment,Assistance from Payroll
 END;
 
-insert into Payroll (DNI,FirstName,LastName,Position,PhoneNumber,Salary,SocialSecurity,Taxes,Payment,Assistance) values ('12352','Samuel','Charles','Feo','2315258',0.00,2563.2,3.214,1.25,1)
 
 Go
 CREATE PROCEDURE spInsertEmployee -- Alters Payroll Table
@@ -78,28 +75,4 @@ CREATE PROCEDURE spDeleteEmployee --Alters Register Table
 AS
 BEGIN
 DELETE FROM Payroll WHERE DNI = @DNI
-END;
-
-Go
-
-CREATE PROCEDURE spCreateUser -- Alters Register Table
-@FirstName varchar(20),
-@LastName varchar(20),
-@DNI char(11),
-@UserPassword varchar(16),
-@Email varchar(320),
-@UserRole varchar(30),
-@UserName varchar(16)
-AS
-BEGIN
-INSERT INTO Register (FirstName, LastName, DNI, UserPassword, Email, UserRole, UserName) VALUES (@FirstName, @LastName, @DNI, @UserPassword, @Email, @UserRole, @UserName)
-END;
-
-
-Go
-CREATE PROCEDURE spDeleteUser -- Alters Register Table
-@UserName varchar(16)
-AS
-BEGIN
-DELETE FROM Register WHERE UserName = @UserName
 END;
