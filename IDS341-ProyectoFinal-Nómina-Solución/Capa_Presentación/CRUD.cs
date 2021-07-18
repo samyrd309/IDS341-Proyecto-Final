@@ -87,7 +87,7 @@ namespace Capa_Presentación
 					{
 						objectCN.Edit(txtDNI.Text, txtFirstName.Text, txtLastName.Text, txtPosition.Text, txtPhoneNumber.Text, txtSalary.Text, vSocialSec.ToString(), vTaxes.ToString(), NetPayment.ToString(), txtAssistance.Text);
 						bEdit = false;
-						btnEdit.Text = "EDIT";
+						btnEdit.Text = "Edit";
 						txtDNI.Enabled = true;
 					}
 
@@ -116,7 +116,7 @@ namespace Capa_Presentación
 					if (dgvPayroll.SelectedRows.Count > 0)
 					{
 						bEdit = true;
-						btnEdit.Text = "CANCEL EDITION";
+						btnEdit.Text = "Cancel";
 						txtDNI.Enabled = false;
 
 						// Textboxes data load
@@ -135,7 +135,7 @@ namespace Capa_Presentación
 
 				case true:
 					txtDNI.Enabled = true;
-					btnEdit.Text = "EDIT";
+					btnEdit.Text = "Edit";
 					bEdit = false;
 					break;
 			}
