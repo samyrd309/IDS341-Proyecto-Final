@@ -134,9 +134,13 @@ namespace Capa_Presentación
 					break;
 
 				case true:
-					txtDNI.Enabled = true;
-					btnEdit.Text = "Edit";
-					bEdit = false;
+					if(MessageBox.Show("Are you sure you want to cancel the edition?", "Action confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    {
+						txtDNI.Enabled = true;
+						btnEdit.Text = "Edit";
+						bEdit = false;
+						CleanFields();
+					}
 					break;
 			}
 		}
