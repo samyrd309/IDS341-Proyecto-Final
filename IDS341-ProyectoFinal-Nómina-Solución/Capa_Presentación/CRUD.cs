@@ -78,7 +78,7 @@ namespace Capa_Presentación
 				{
 					if (bEdit == false)
 					{
-						if (objectCN.ExisteRegistro(txtDNI.Text, query) == false)
+						if (objectCN.RegisterExists(txtDNI.Text, query) == false)
 							objectCN.Insert(txtDNI.Text, txtFirstName.Text, txtLastName.Text, txtPosition.Text, txtPhoneNumber.Text, txtSalary.Text, vSocialSec.ToString(), vTaxes.ToString(), NetPayment.ToString(), txtAssistance.Text);
 						else
 							MessageBox.Show("The current DNI already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -85,7 +85,7 @@ namespace Capa_Datos
         }
 
         //Function to validate the existence of data
-        public bool ExisteRegistro(string DNI, string query)
+        public bool RegisterExists(string DNI, string query)
         {
             SqlCommand cmd = new SqlCommand(query, connection.OpenConnection());
             cmd.Parameters.AddWithValue("@DNI", DNI);

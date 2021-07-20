@@ -40,9 +40,9 @@ namespace Capa_Negocio
         }
 
         // Función para encontrar registros iguales
-        public bool ExisteRegistro(string DNI, string query)
+        public bool RegisterExists(string DNI, string query)
         {
-            return objectCD.ExisteRegistro(DNI, query);
+            return objectCD.RegisterExists(DNI, query);
         }
     }
 }
