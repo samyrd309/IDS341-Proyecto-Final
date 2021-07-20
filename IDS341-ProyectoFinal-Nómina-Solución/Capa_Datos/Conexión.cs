@@ -12,15 +12,6 @@ namespace Capa_Datos
     {
         private readonly string connectionString;
 
-        public ConnectionToSql()
-        {
-            connectionString = "Server= LAPTOP-3O0264U2; DataBase= IDS341; integrated security= true";
-        }
-        protected SqlConnection GetConnection()
-        {
-            return new SqlConnection(connectionString);
-        }
-
         private SqlConnection Conexion = new SqlConnection("Server = desktop-91438d4;DataBase = IDS341; Integrated Security = true");
         //Open Connection String
         public SqlConnection OpenConnection()
