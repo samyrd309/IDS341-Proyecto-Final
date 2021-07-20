@@ -70,7 +70,7 @@ UPDATE Payroll set FirstName = @FirstName, LastName = @LastName, Position = @Pos
 END;
 
 Go
-CREATE PROCEDURE spDeleteEmployee --Alters Register Table
+CREATE PROCEDURE spDeleteEmployee --Alters Payroll Table
 @DNI varchar(11)
 AS
 BEGIN

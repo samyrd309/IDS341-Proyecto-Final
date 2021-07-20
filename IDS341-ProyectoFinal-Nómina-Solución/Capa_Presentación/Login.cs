@@ -21,7 +21,7 @@ namespace Capa_Presentación
 					var validLogin = user.LoginUser(txtUser.Text, txtPass.Text);
 					if (validLogin == true)
 					{
-						//Mostrar el formulario principal y olcutar el formulario de Login
+						//Show the main form and hide the Login form
 						CRUD crud = new CRUD();
 						crud.Show();
 						this.Hide();

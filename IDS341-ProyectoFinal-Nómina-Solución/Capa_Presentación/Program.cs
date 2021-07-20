@@ -9,7 +9,7 @@ namespace Capa_Presentación
     static class Program
     {
         /// <summary>
-        /// Punto de entrada principal para la aplicación.
+        /// Main point of entrance to the app.
         /// </summary>
         [STAThread]
         static void Main()

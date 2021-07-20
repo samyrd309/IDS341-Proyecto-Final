@@ -33,9 +33,9 @@ namespace Capa_Presentación
 			dgvPayroll.DataSource = objectCN.ShowPayroll();
 		}
 
-		/* Cálculo de los impuestos correspondientes a:
-         * Seguro Familiar de Salud (SFS).
-         * Administradora de fondo de pensiones (AFP).
+		/* Calculus of taxes corresponding to:
+         * Family Social Security (SFS).
+         * Pension fund administrator (AFP). 
          */
 		public double SocialSecurity(double vSocialSec)
 		{
@@ -43,7 +43,7 @@ namespace Capa_Presentación
 			return vSocialSec;
 		}
 
-		// Cálculo de Impuesto sobre la renta (ISR) en función del sueldo bruto, aplicándole los descuentos anteriores.
+		// Calculus of Income taxes (ISR) based on the gross family, applying the previuos discounts: 
 		public double Taxes(double vSalary, double vSocialSec)
 		{
 			double Taxes = (vSalary - vSocialSec) * 12;
@@ -67,7 +67,7 @@ namespace Capa_Presentación
 		{
 			if (txtFirstName.Text.Trim() != "" && txtLastName.Text.Trim() != "" && txtDNI.Text.Length == 11 && txtAssistance.Text.Trim() != "" && txtPhoneNumber.Text.Trim() != "" && txtPosition.Text.Trim() != "" && txtSalary.Text.Trim() != "")
 			{
-				// Discount functions
+				// Taxes Discount functions
 				double vSocialSec = SocialSecurity(Convert.ToDouble(txtSalary.Text));
 				double vTaxes = Taxes(Convert.ToDouble(txtSalary.Text), vSocialSec);
 				double NetPayment = Convert.ToDouble(txtSalary.Text) - vTaxes;

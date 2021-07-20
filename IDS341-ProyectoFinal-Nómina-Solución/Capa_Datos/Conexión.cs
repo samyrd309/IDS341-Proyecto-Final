@@ -21,15 +21,15 @@ namespace Capa_Datos
             return new SqlConnection(connectionString);
         }
 
-        private SqlConnection Conexion = new SqlConnection("Server = LAPTOP-3O0264U2;DataBase = IDS341; Integrated Security = true");
-        //Función Abrir String de Conexión
+        private SqlConnection Conexion = new SqlConnection("Server = desktop-91438d4;DataBase = IDS341; Integrated Security = true");
+        //Open Connection String
         public SqlConnection OpenConnection()
         {
             if (Conexion.State == ConnectionState.Closed)
                 Conexion.Open();
             return Conexion;
         }
-        //Función Cerrar String de Conexión
+        //Close Connection String
         public SqlConnection CloseConnection()
         {
             if (Conexion.State == ConnectionState.Open)

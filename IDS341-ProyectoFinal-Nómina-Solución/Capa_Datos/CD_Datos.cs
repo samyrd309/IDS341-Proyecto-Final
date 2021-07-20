@@ -84,7 +84,7 @@ namespace Capa_Datos
             connection.CloseConnection();
         }
 
-        //Funcion para validar existencia de datos
+        //Function to validate the existence of data
         public bool ExisteRegistro(string DNI, string query)
         {
             SqlCommand cmd = new SqlCommand(query, connection.OpenConnection());
